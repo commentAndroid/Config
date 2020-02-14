@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--状态栏颜色-->
+    <color name="colorPrimaryDark">#1338A2</color>
+    <!--控制各个控件被选中时的颜色-->
+    <color name="colorAccent">#1338A2</color>
+    <!--页面背景色-->
+    <color name="windowBackground">#F6F6F6</color>
+    <!--底部导航栏颜色-->
+    <color name="navigationBarColor">#1338A2</color>
+    <!--Appbar背景色-->
+    <color name="colorPrimary">#1338A2</color>
+    <!--ToolBar上的Title颜色-->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <!--各个控制控件的默认颜色-->
+    <color name="colorControlNormal">#999999</color>
+</resources>

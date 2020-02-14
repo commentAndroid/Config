@@ -1,0 +1,2 @@
+include ':app', ':config'
+rootProject.name='Config'

@@ -1,0 +1,68 @@
+ext {
+
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.2",
+            applicationId    : "com.t_ark.baseframe",
+            minSdkVersion    : 15,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    def dependVersion = [
+            // App dependencies
+            support          : '1.1.0',
+            ktx              : '1.1.0',
+            constraintVersion: '1.1.3',
+
+            lifecycles       : '2.0.0-beta01',
+            roomVersion      : '2.0.0-beta01',
+            junit            : "4.12",
+            gson             : "2.8.5",
+            okhttp           : "3.10.0",
+            okio             : "1.14.0",
+            okhttplogging    : "3.10.0",
+            retrofit         : "2.4.0",
+            glide            : "4.7.1",
+            rxandroid        : "2.0.2",
+            rxjava           : "2.1.12",
+            nineold          : "2.4.0",
+            multidex         : '2.0.0',
+    ]
+
+    //support配置
+    support = [
+            "constraint-layout"       : "androidx.constraintlayout:constraintlayout:${dependVersion.constraintVersion}",
+            'support-v4'              : "androidx.legacy:legacy-support-v4:${dependVersion.support}",
+            'appcompat-v7'            : "androidx.appcompat:appcompat:${dependVersion.support}",
+            'recyclerview-v7'         : "androidx.recyclerview:recyclerview:${dependVersion.support}",
+            "cardview"                : "androidx.cardview:cardview:${dependVersion.support}",
+            'design'                  : "com.google.android.material:material:${dependVersion.support}",
+            'animated-vector-drawable': "com.android.support:animated-vector-drawable:${dependVersion["support"]}",
+            'junit'                   : "junit:junit:${dependVersion.junit}",
+    ]
+
+    dependencies = [
+            "gson"                : "com.google.code.gson:gson:${dependVersion.gson}",
+            "retrofit"            : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            "converter-gson"      : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofit}",
+            "adapter-rxjava2"     : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofit}",
+            "logging-interceptor" : "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttplogging}",
+            "okhttp"              : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp}",
+            "okio"                : "com.squareup.okio:okio:${dependVersion.okio}",
+            "glide"               : "com.github.bumptech.glide:glide:${dependVersion.glide}",
+            "rxandroid"           : "io.reactivex.rxjava2:rxandroid:${dependVersion.rxandroid}",
+            "rxjava"              : "io.reactivex.rxjava2:rxjava:${dependVersion.rxjava}",
+            "rxpermissions"       : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
+            "multidex"            : "androidx.multidex:multidex:${dependVersion.multidex}",
+            "nineold"             : "com.nineoldandroids:library:${dependVersion.nineold}",
+            "crashreport_upgrade" : "com.tencent.bugly:crashreport_upgrade:latest.release",
+            "nativecrashreport"   : "com.tencent.bugly:nativecrashreport:latest.release",
+            "analytics"           : "com.umeng.analytics:analytics:latest.integration",
+            "lifecycles"          : "androidx.lifecycle:lifecycle-extensions:${dependVersion.lifecycles}",
+            "room"                : "androidx.room:room-runtime:${dependVersion.roomVersion}",
+            "ktx"                 : "androidx.core:core-ktx:${dependVersion.ktx}",
+            "city_picker"         : "liji.library.dev:citypickerview:0.7.0",
+    ]
+}
