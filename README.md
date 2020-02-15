@@ -17,25 +17,50 @@ samples, guidance on mobile development, and a full API reference.
 
 ## 用法
 #### 1.统一编辑的版本和第三方支持库
-##### 在根目录的build.gradle中加入
+##### 1.1 在根目录的build.gradle中加入
 apply from: "config/config.gradle"
-##### 在所要引入的moudel修改为类似的这样
+##### 1.2 在所要引入的moudel修改为类似的这样
 compileSdkVersion rootProject.ext.android["compileSdkVersion"]  
 buildToolsVersion rootProject.ext.android["buildToolsVersion"]  
 implementation rootProject.ext.support["appcompat-v7"]  
 implementation rootProject.ext.dependencies["ktx"]
 
-##### 修改版本号升级  
-PUBLISH_VERSION = '0.0.2'
+#### 2.版本风格设置
+##### 2.1 主题风格的设置
+设置color.xml中的 
+```xml
+<!--状态栏颜色-->
+<color name="colorPrimaryDark">#1338A2</color>
+<!--控制各个控件被选中时的颜色-->
+<color name="colorAccent">#1338A2</color>
+<!--页面背景色-->
+<color name="windowBackground">#F6F6F6</color>
+<!--底部导航栏颜色-->
+<color name="navigationBarColor">#1338A2</color>
+<!--Appbar背景色-->
+<color name="colorPrimary">#1338A2</color>
+<!--ToolBar上的Title颜色-->
+<color name="textColorPrimary">#FFFFFF</color>
+<!--各个控制控件的默认颜色-->
+<color name="colorControlNormal">#999999</color>
+```
+各个属性的解释  
+![alt statusBarColor](https://raw.githubusercontent.com/commentAndroid/Config/master/image/statusBarColor.jpeg)![alt textColorPrimary](https://raw.githubusercontent.com/commentAndroid/Config/master/image/textColorPrimary.png)
 
-## 引用方法 
-##### 在根目录的build.gradle中加入
-allprojects {
-        repositories {
-            ...
-            maven { url 'https://jitpack.io' }
-        }
-    }
-##### 在所要引入的moudel加入
-implementation 'androidx.core:core-ktx:1.1.0'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
